@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.http import HttpResponse
+
+def teacher(request):
+    return HttpResponse("Здесь будет версия ЭЖ для учителей")
+
