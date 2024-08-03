@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: keep the secret key used in product ion secret!
 SECRET_KEY = '+6go17+hk^g9&(ho3xb9re&pbb4@(tgfqr#40ce1vqw3iz2n*d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'newton.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
