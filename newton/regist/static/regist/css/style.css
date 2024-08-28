@@ -1,3 +1,25 @@
 body{
     background: rgb(236, 140, 140);
 }
+
+.menu{
+    display: inline-block;
+}
+
+/* .signature {
+    display: flex;
+}
+.input_data{
+    display: flex;
+} */
+
+.regist_block {
+    display: flex;
+    width: 50%;
+    
+
+    
+}
+.reg_li {
+    list-style-type: none;
+}

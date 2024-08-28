@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'regist/css/style.css' %}">
+    <link rel="stylesheet" href={% block linkcss %}{% endblock %}>
 </head>
 <body>
+    <header class="menu">
+        <div class="time_date">{{now_time}}</div>
+        <div class="theme">white</div>
+    </header>
     {% block content %}{% endblock %}
 </body>
 </html>
